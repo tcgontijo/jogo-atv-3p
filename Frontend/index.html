@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Mole Game</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fascinate&family=Gloria+Hallelujah&family=Patrick+Hand&family=Press+Start+2P&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- JS próprio -->
+    <script src="js/login.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+</head>
+
+<body>
+    
+    <div class="container row m-auto w-75 my-3 title">
+        
+        <div class="col-3 text-end">
+            <img class="w-75" src="img/toupeira.gif" alt="">
+        </div>
+        <div class="col-6">
+            <h1 class="text-center p-3">Mole Game</h1>
+        </div>
+        <div class="col-3">
+            <img class="w-75" src="img/toupeira.gif" alt="">
+        </div>
+        <h2 class="text-center">Login</h2>
+    </div>
+    <div class="container w-50 bg-transparent rounded-3 p-3 border border-5 border-dark">
+        <div class="row  p-3 m-auto">
+            <div class="m-auto p-0  col-10">
+                <div class="form-floating">
+                    <input class="form-control mb-2 border border-5 border-warning" id="user" placeholder="Usuário" />
+                    <label for="user">Usuário</label>
+                </div>
+                <div class="form-floating">
+                    <input class="form-control mt-3 border border-5 border-warning" type="password" id="pwd" placeholder="Senha" />
+                    <label for="pwd">Senha</label>
+                </div>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-warning h-100 w-100 p-0 fw-bold" id="btnLogin">ENTRAR</button>
+            </div>
+        </div>
+        <div class="row  m-auto">
+            <div class="col-6 py-2 text-center">
+                <button class="btn btn-dark text-warning fs-4" title="cadastro" onclick="window.open('cadastro.html', '_self')">
+                    CADASTRO
+                </button>
+            </div>
+            <div class="col-6 py-2 text-center">
+                <button class="btn btn-dark text-warning fs-4 px-5" title="Raking" onclick="window.open('ranking.html', '_self')">
+                    RANKING
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

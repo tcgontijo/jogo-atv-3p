@@ -1,0 +1,36 @@
+body {
+    background-image: url("../img/mato.jpg");
+    background-color: green;
+  }
+
+h1,h2 {
+    /* font-family: 'Fascinate', cursive; */
+    /* font-family: 'Gloria Hallelujah', cursive; */
+    /* font-family: 'Patrick Hand', cursive; */
+    /* font-family: 'Press Start 2P', cursive; */
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Bangers', cursive;
+    color: orange;
+    text-align: center;
+}
+
+h1{
+    font-size:110px;
+}
+
+h2 {
+    font-size:70px;
+}
+
+.title {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.caixa {
+    height: 382px;
+}
+
+.tabela {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: aliceblue;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/rank.js"></script>
+    <title>Ranking | Mole Game</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fascinate&family=Gloria+Hallelujah&family=Patrick+Hand&family=Press+Start+2P&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- JS próprio -->
+    <script src="js/login.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row title m-1">
+            <h1>MOLE GAME</h1>
+            <h2>RANKING</h2>
+        </div>
+        <div class="row m-1 caixa">
+            <div class="col-5 px-4">
+                <div class="row card mt-5 bg-dark text-light">
+                    <div class="card-header">
+                        <label class="" for="rank">Selecione o Nível:</label>
+                    </div>
+                    <div class="card-body">
+                        <select class="form-select form-select-lg" id="rank">
+                            <option value="" selected></option>
+                            <option value="easy">Fácil</option>
+                            <option value="medium">Médio</option>
+                            <option value="hard">Difícil</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="backLogin" class="row text-center mt-5">
+                    <button class="btn btn-dark text-warning fs-4" onclick="window.open('index.html', '_self')">
+                        TELA DE LOGIN
+                    </button>
+                </div>
+                <div id="backGame" class="row text-center mt-5">
+                    <button class="btn btn-dark text-warning fs-4" onclick="window.open('jogo.html', '_self')">
+                        VOLTAR AO JOGO
+                    </button>
+                </div>
+            </div>
+            <div class="col-7 px-4">
+                <table class="table text-center lh-1 tabela"></table>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
