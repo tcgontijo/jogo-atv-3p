@@ -18,7 +18,7 @@ $(function () {
 
     function montaTabela(nivel) {
         $("table").empty();
-        $.getJSON(`http://localhost:8080/ranking?nivel=${nivel}`, function (registros) {
+        $.getJSON(`https://mole-game-tulio.herokuapp.com/ranking?nivel=${nivel}`, function (registros) {
 
             $("table").append("<thead><th>#</th><th>Nome</th><th>Pontuação</th></thead>");
             var tbody = $("<tbody>");
