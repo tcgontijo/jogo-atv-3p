@@ -6,7 +6,7 @@ var $login = function () {
             let usr = $registros.find($usuario => $usuario.user == $user && $usuario.pwd == $pwd)
             if (usr) {
                 localStorage.setItem("usr", JSON.stringify(usr));
-                window.open("../jogo.html", "_self");
+                window.open("jogo.html", "_self");
             } else alert("Usuário inválido!")
         });
     }
