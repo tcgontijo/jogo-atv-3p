@@ -2,7 +2,7 @@ var $login = function () {
     let $user = $("#user").val();
     let $pwd = $("#pwd").val();
     if ($user && $pwd) {
-        $.getJSON("http://localhost:8080/usuario", function ($registros) {
+        $.getJSON("https://mole-game-tulio.herokuapp.com/usuario", function ($registros) {
             let usr = $registros.find($usuario => $usuario.user == $user && $usuario.pwd == $pwd)
             if (usr) {
                 localStorage.setItem("usr", JSON.stringify(usr));
@@ -17,14 +17,14 @@ var $cadastro = function () {
     let $user = $("#userc").val();
     let $pwd = $("#pwdc").val();
     if ($user && $pwd) {
-        $.getJSON("http://localhost:8080/usuario", function ($registros) {
+        $.getJSON("https://mole-game-tulio.herokuapp.com/usuario", function ($registros) {
             if ($registros.find($usuario => $usuario.user == $user)) {
                 alert(`O nome de usuário "${$user}" já está em uso!`)
                 $("input").val('');
             }
             else {
                 let data = { user: $user, pwd: $pwd };
-                axios.post("http://localhost:8080/usuario", data);
+                axios.post("https://mole-game-tulio.herokuapp.com/usuario", data);
                 $("input").val('');
                 alert("Usuário Cadastrado!");
                 window.open("index.html", "_self");
