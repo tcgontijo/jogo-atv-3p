@@ -54,7 +54,7 @@ function saveScore($score) {
     let $usr = JSON.parse(localStorage.getItem("usr"));
     let $data = { "pontuacao": parseInt($score), "nivel": $("#level").val(), "usuario": $usr };
 
-    axios.post("http://localhost:8080/ranking", $data);
+    axios.post("https://mole-game-tulio.herokuapp.com/ranking", $data);
     $("#fecha").click(() => {
         location.reload();
     });
